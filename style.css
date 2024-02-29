@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+}
+.border {
+    border: 5px solid #ffcc00;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: calc(25% - 40px); 
+    box-sizing: border-box;
+}
+
+.border:nth-child(odd) {
+    border-style: double; 
+}
+
+.border:nth-child(even) {
+    border-style: dashed; 
+}
+
+.border:nth-child(1),
+.border:nth-child(3) {
+    border-color: #ff0000; 
+}
+
+.border:nth-child(2),
+.border:nth-child(4) {
+    border-color: #00ff00; 
+}
